@@ -1,0 +1,8 @@
+.container.mx-auto
+  .row
+    .info-card(ng-repeat="country in countries track by $index")
+      .front
+        img.card-image(ng-src="{{country.flag}}", alt="{{country.name}}")
+      .back
+        h5.card-title {{country.name}}
+        //- a.btn.btn-primary.btn-block(href="#!/countries/{{country.name}}") See Details

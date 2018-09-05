@@ -1,0 +1,13 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Test Doc
+  body(ng-app="app")
+    a(ui-sref="main" ui-sref-active="active" class="btn btn-primary") Main
+    a(ui-sref="contacts" ui-sref-active="active" class="btn btn-primary") Contacts
+    a(ui-sref="countries" ui-sref-active="active" class="btn btn-primary") Countries
+
+    div(class="container")
+      ui-view
